@@ -18,7 +18,7 @@ O projeto conecta em um banco MySQL ou PostgreSQL, lê o schema disponível, env
 
 - Python 3.10 ou superior.
 - Ollama instalado e rodando na máquina.
-- Um modelo instalado no Ollama, por exemplo:
+- O modelo `qwen2.5-coder:3b` instalado no Ollama. O projeto foi feito e testado para usar esse modelo:
 
 ```bash
 ollama pull qwen2.5-coder:3b
@@ -195,6 +195,7 @@ Mesmo assim, a consulta é gerada por uma LLM. Para uso mais seguro, recomenda-s
 
 ## Limitações
 
+- O projeto foi feito para usar o modelo `qwen2.5-coder:3b`.
 - A qualidade do SQL depende do modelo usado no Ollama.
 - Perguntas ambíguas podem gerar consultas diferentes do esperado.
 - O projeto depende do Ollama rodando localmente.
